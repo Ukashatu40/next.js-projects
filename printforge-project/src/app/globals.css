@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  /* This creates utility classes like bg-orange-accent */
+  --color-orange-accent: #f77d36;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montserrat-alternates);
+}
