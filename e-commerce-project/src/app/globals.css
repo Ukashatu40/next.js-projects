@@ -1,0 +1,22 @@
+/* 1. Import Tailwind CSS */
+@import "tailwindcss";
+
+/* 2. Map your Geist font variables to Tailwind themes */
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* You can also define custom brand colors here */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/* 3. Global Base Styles */
+@layer base {
+  body {
+    /* Reference the mapped variable or the system fallback */
+    font-family: var(--font-sans), ui-sans-serif, system-ui;
+    background: white;
+    color: black;
+  }
+}
