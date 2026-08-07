@@ -1,15 +1,18 @@
+import { ReactNode } from "react";
+
 const EcommerceLayout = ({
   children,
   product,
 }: {
-  children: React.ReactNode;
-  product: string;
+  children: ReactNode;
+  product: ReactNode;
 }) => {
   return (
     <div>
-      {children}
       {product}
+      {children}
     </div>
   );
 };
+
 export default EcommerceLayout;
